@@ -14,7 +14,8 @@ IF NOT EXISTS shopping_list
     name TEXT NOT NULL,
     price decimal
 (10,2) NOT NULL,
-    date_added DATE DEFAULT now() NOT NULL,
+    date_added TIMESTAMP DEFAULT now
+() NOT NULL,
     checked BOOLEAN NOT NULL,
     category grocery NOT NULL
 );

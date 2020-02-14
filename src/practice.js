@@ -5,7 +5,7 @@ const knexInstance = knex({
   client: 'pg',
   connection: process.env.DB_URL
 })
-
+h
 knexInstance
   .select('product_id', 'name', 'price', 'category')
   .from('amazong_products')
